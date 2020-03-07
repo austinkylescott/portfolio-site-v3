@@ -1,0 +1,27 @@
+// Style Setup
+@import "font.scss";
+@import "color.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $color-bg-primary;
+  color: $color-font-primary;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+section {
+  height: 60vh;
+  border: 5px solid $color-primary;
+  padding: 2rem;
+  padding-top: 80px;
+  border-top: none;
+}

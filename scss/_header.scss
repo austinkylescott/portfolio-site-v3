@@ -1,0 +1,40 @@
+// Style Setup
+@import "font.scss";
+@import "color.scss";
+
+#logo {
+  font-size: 3rem;
+  background: $color-primary;
+  color: $color-bg-primary;
+  margin-right: auto;
+  text-transform: uppercase;
+}
+
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  width: 80vw;
+  margin: 0 auto;
+  font-family: $font-stack-primary;
+  font-size: 3rem;
+  line-height: 1;
+  align-items: baseline;
+  background: rgba($color-bg-primary, 1);
+  border-bottom: solid 5px $color-primary;
+}
+
+.nav-item {
+  display: block;
+  text-decoration: none;
+  color: $color-primary;
+  padding: 1rem;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  transition-property: color, background;
+}
+.nav-item.active,
+.nav-item:hover {
+  color: $color-bg-primary;
+  background: $color-primary;
+}
